@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>OpenWISP Project - The Code</title>
+      <title>OpenWISP Project - Source Code</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
       <link rel="stylesheet" href="css/semantic.min.css">
       <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />   
+      <link rel="icon" type="image/png" href="favicon.png">
     <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
     <script src="js/cufon-yui.js" type="text/javascript"></script>
     <script src="js/cufon-replace.js" type="text/javascript"></script>
@@ -75,15 +76,18 @@
       <div class="ui tablet only computer only sixteen column">
         <div class="ui borderless top fixed menu">
           <div class="item">
-            <img src="./images/logo.svg" alt="OpenWISP" style="width: 10rem">
+            <a href=index.html>
+	    <img src="./images/logo.svg" alt="OpenWISP" style="width: 10rem">
+            </a>
           </div>
           <div class="right menu">
             <a class="item" href="index.html">Home</a>
             <a class="item" href="whatis.html">What is</a>
+	    <a class="item" href="support.html">Support</a>
             <a class="item" href="architectures.html">Architectures</a>
             <a class="item" href="history.html">History</a>
-            <a class="active item" href="thecode.html">The code</a>
-            <a class="item" href="about.html">About us</a>
+            <a class="item" href="source_code.html">Source Code</a>
+            <a class="item" href="about.html">About Us</a>
           </div>
         </div>  
       </div>
@@ -101,15 +105,30 @@
         <div class="ui sidebar vertical menu">
           <a class="item" href="index.html">Home</a>
           <a class="item" href="whatis.html">What is</a>
+	  <a class="item" href="support.html">Support</a>
           <a class="item" href="architectures.html">Architectures</a>
           <a class="item" href="history.html">History</a>
-          <a class="active item" href="thecode.html">The code</a>
+          <a class="item" href="source_code.html">Source Code</a>
           <a class="item" href="about.html">About us</a>
         </div>
       </div>
     </div>
+	  <div class="wrapper" style="margin-top:120px">
+                            <p class="indent-bot aligncenter">
+                                <a href="https://summerofcode.withgoogle.com/organizations/5694014226432000/" target="_blank">
+                                    <img src="./images/gsoc.png" width="760" alt="Google Summer of Code">
+                                </a>
+                            </p>
+                            <p class="aligncenter">
+                                <a href="https://summerofcode.withgoogle.com/organizations/5694014226432000/" target="_blank"><strong>OpenWISP is an accepted mentoring organization for the Google Summer of Code 2017.</strong></a>
+                            </p>
+                            <p class="aligncenter">
+                                <a class="button" href="ideas-2017.html">See the ideas list</a>
+                            </p>
+                        </div>
+		<br>
       
-      <div class="main">
+   
         <!--==============================content================================-->
          <section id="content">
             <div class="ic">
@@ -121,36 +140,19 @@
             <div class="container_12">
                <div class="wrapper">
                   <article class="grid_12">
-                     <div class="indent-right">
-                        <h3>OpenWISP downloads</h3>
-                        <div class="p3">
-                           <p class="indent-bot">OpenWISP is not a static project.<br />
-                           The OpenWISP's community contributes daily by developing new functionality, by submitting patches and by opening new issues.
-                           Although the recommended way to download OpenWISP is via <a href="http://github.com/openwisp" target="_blank">github</a> using one of the release tag, here follows a download section with the recent stable releases.
-                           <br /><br />
-                           <a href="downloads/owcpm-0.8.5b.tar.gz">OpenWISP Captive Portal Manager version 0.8.5b</a><br />
-                           <a href="downloads/owf-2.0.0b.tar.gz">OpenWISP Firmware version 2.0.0b</a><br />
-                           <a href="downloads/owgm-1.1.1b.tar.gz">OpenWISP Geographic Monitoring version 1.1.1b</a><br />
-                           <a href="downloads/owm-0.9.17b.tar.gz">OpenWISP Manager version 0.9.17b</a><br />
-                           <a href="downloads/owmw-0.0.4b.tar.gz">OpenWISP MiddleWare version 0.0.4b</a><br />
-                           <a href="downloads/owums-1.1.4t.tar.gz">OpenWISP User management System version 1.1.4t</a><br />
-                           <br />
-                           Please keep in mind that if you wish to contribute to OpenWISP you should use <a href="http://github.com/openwisp" target="_blank">github</a> and:
-                           <ul style="list-style-type:disc;margin-left:10px;padding-left:10px;">
-                              <li>fork the application you wish to contribute to;</li>
-                              <li>add new code respecting as much as possible the code style and formatting conventions used. If you wish to modify existing code please try to isolate as much as possible your modification;
-                              </li>
-                              <li>send us a pull request.</li>
-                           </ul>
-                           <br />
-                           Patches that are submitted individually (i.e., outside github) <u>are likely to be ignored</u>.
-                           <br />
-                           <br />
-                           <span style="display:block;width:50%;height:100%;margin:0 auto;">
-                              <a href="http://www.jetbrains.com/ruby/features?utm_source=RubyMineUser&utm_medium=Banner&utm_campaign=RubyMine" style="display:block; background:#fff url(http://www.jetbrains.com/ruby/features/ruby_banners/ruby1/ruby468x60_white.gif) no-repeat 10px 50%; border:solid 1px #ab0022; margin:0;padding:0;text-decoration:none;text-indent:0;letter-spacing:-0.001em; width:466px; height:58px" alt="Intelligent IDE for professional Ruby and Rails development" title="Intelligent IDE for professional Ruby and Rails development"><span style="margin: 1px 0 0 63px;padding: 0;float: left;font-size: 12px;cursor:pointer;  background-image:none;border:0;color: #ab0022; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Developed with</span><span style="margin:0 0 0 180px;padding:18px 0 2px 0; line-height:13px;font-size:13px;cursor:pointer;  background-image:none;border:0;display:block; width:265px; color:#ab0022; font-family: trebuchet ms,arial,sans-serif;font-weight: normal;text-align:left;">Intelligent IDE for professional Ruby and Rails development</span></a>
-                           </span>
-                        </div>
-                     </div>
+			<h2>OpenWISP endorses LEDE</h2>
+			<p class="indent-bot">
+				We deeply appreciate the efforts of the <a href="https://lede-project.org/" target="_blank">LEDE
+				(Linux Embedded Development Environment)</a> project in creating a community of enthusiast hackers
+				that collaborate and work transparently to create a sustainable, secure, modern, stable and performant linux distribution
+				for embedded applications, routers and network devices in general.<br><br>
+				For the previously stated reasons, the OpenWISP project endorses <strong>LEDE</strong>
+				and its now defaulting to its new release:
+				<a href="https://lede-project.org/releases/17.01/start">LEDE 17.01</a>.
+			</p>
+			<p class="aligncenter">
+			    <a class="button" href="https://lede-project.org/">Find out more about LEDE</a>
+			</p>
                   </article>
                </div>
             </div>
@@ -159,7 +161,7 @@
       <!--==============================footer=================================-->
          <footer>
             <div class="inner">
-               <div class="footer-bg"> openWISP.org © 2012<span></span><span></span>
+               <div class="footer-bg"> openWISP.org © 2017<span></span><span></span>
                </div>
             </div>
          </footer>
